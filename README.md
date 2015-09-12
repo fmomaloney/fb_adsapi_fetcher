@@ -1,7 +1,7 @@
 # fb_adsapi_fetcher
 It is tedious to run graph calls against the FB api, as it requires copying and pasting access_tokens and looking up endpoints in FB doc. This script runs graph Requests against the ads api and returns ad account, custom audience or ad  placement details, after looking up access token. Helpful in validation of placements. Written in Python3.
 
-<p>
+<pre>
 prod@qacentral:~/bin$ ./gp2_main.py -h
 usage: gp2_main.py [-h] [-sc] [-gc] [-p PIPELINE] [-l LOOKUP] [-m {1,2,3,4,5}]
                    [-f FBID] [-v]
@@ -27,5 +27,5 @@ optional arguments:
                         5) Campaign-Adset-Placement Status for -f=FB_ID!
   -f FBID, --fbid FBID  Pass in the FB ID for graph calls requesting placement level data.
   -v, --verbose         Show all fields FB provides.
-  <p>
+  <pre>
 
