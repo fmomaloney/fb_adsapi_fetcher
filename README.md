@@ -5,7 +5,6 @@ It is tedious to run graph calls against the FB api, as it requires copying and 
 prod@qacentral:~/bin$ ./gp2_main.py -h
 usage: gp2_main.py [-h] [-sc] [-gc] [-p PIPELINE] [-l LOOKUP] [-m {1,2,3,4,5}]
                    [-f FBID] [-v]
-
 This script returns results from Facebook graph calls against various objects.
 
 optional arguments:
@@ -27,5 +26,31 @@ optional arguments:
                         5) Campaign-Adset-Placement Status for -f=FB_ID!
   -f FBID, --fbid FBID  Pass in the FB ID for graph calls requesting placement level data.
   -v, --verbose         Show all fields FB provides.
-  <pre>
+  
+fmaloney ~/PycharmProjects/gp-cli: ./gp2_main.py -sc
+The working config is for pipeline 2, name = qa6_eur@nanigans.com, cred = 675, account = 124113917717380, last synced = 2015-08-31 10:06, and...
+token = CAABjmNKT_an_access_token
 
+# query adgroup, adset and campaign_group
+fmaloney ~/PycharmProjects/gp-cli: ./gp2_main.py -m5 -f6033066118888
+Adset: budget_remaining is 1000.
+Adset: campaign_group_id is 6033066079288.
+Adset: campaign_status is DELETED.
+Adset: created_time is 2015-07-13T04:23:59+0100.
+Adset: daily_budget is 1000.
+Adset: id is 6033066080288.
+Adset: is_autobid is False.
+Adset: name is no_spend_112_[P].
+Campaign: campaign_group_status is DELETED.
+Campaign: id is 6033066079288.
+Campaign: name is no_spend_112_2.
+Campaign: objective is WEBSITE_CLICKS.
+Placement: account_id is 124113917717380.
+Placement: adgroup_status is DELETED.
+Placement: bid_info is {'IMPRESSIONS': 15}.
+Placement: bid_type is CPM.
+Placement: campaign_id is 6033066080288.
+Placement: created_time is 2015-07-13T04:26:55+0100.
+Placement: id is 6033066118888.
+Placement: name is Ad_10740520.
+  <pre>
