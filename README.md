@@ -6,7 +6,6 @@ prod@qacentral:~/bin$ ./gp2_main.py -h
 usage: gp2_main.py [-h] [-sc] [-gc] [-p PIPELINE] [-l LOOKUP] [-m {1,2,3,4,5}]
                    [-f FBID] [-v]
 This script returns results from Facebook graph calls against various objects.
-
 optional arguments:
   -h, --help            show this help message and exit
   -sc, --show_cred      Show the FB Ad Account (cred) we are working with.
@@ -31,7 +30,6 @@ fmaloney ~/PycharmProjects/gp-cli: ./gp2_main.py -sc
 The working config is for pipeline 2, name = qa6_eur@nanigans.com, cred = 675, account = 124113917717380, last synced = 2015-08-31 10:06, and...
 token = CAABjmNKT_an_access_token
 
-# query adgroup, adset and campaign_group
 fmaloney ~/PycharmProjects/gp-cli: ./gp2_main.py -m5 -f6033066118888
 Adset: budget_remaining is 1000.
 Adset: campaign_group_id is 6033066079288.
@@ -53,4 +51,4 @@ Placement: campaign_id is 6033066080288.
 Placement: created_time is 2015-07-13T04:26:55+0100.
 Placement: id is 6033066118888.
 Placement: name is Ad_10740520.
-  <pre>
+<pre>
