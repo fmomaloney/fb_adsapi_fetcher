@@ -10,6 +10,7 @@ def main():
     GP-CLI. This script makes graph calls to FB opengraph adsapi and presents results in a form useful to Nanigans.
     Using 'requests' for HTTP. All graph calls should be gets. Initially doing subset of graph calls for placement,
     intend to expand for more graph options. Add some compund calls, which are useful to us.
+    this is a test
     '''
 
     # Read the current account_id and token from config.ini for --show-cred
